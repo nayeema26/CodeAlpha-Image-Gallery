@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>picNest - Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1 class="brand">picNest</h1>
+
+        <nav class="folder-nav" aria-label="Gallery folders">
+
+            <button class="folder-btn active" data-folder="All">
+                All
+                <span class="count" id="count-All">0</span>
+            </button>
+
+            <button class="folder-btn" data-folder="Camera">
+                Camera
+                <span class="count" id="count-Camera">0</span>
+            </button>
+
+            <button class="folder-btn" data-folder="Downloads">
+                Downloads
+                <span class="count" id="count-Downloads">0</span>
+            </button>
+
+            <button class="folder-btn" data-folder="Screenshots">
+                Screenshots
+                <span class="count" id="count-Screenshots">0</span>
+            </button>
+
+            <button class="folder-btn" data-folder="Favorites">
+                Favorites
+                <span class="count" id="count-Favorites">0</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="gallery-header">
+
+            <div>
+                <p class="gallery-label">MY GALLERY</p>
+                <h2 id="current-folder">All Photos</h2>
+            </div>
+
+            <button id="shuffle-btn" class="shuffle-btn">
+                ⇄ Shuffle
+            </button>
+
+        </section>
+
+
+        <section
+            class="gallery"
+            id="gallery"
+            aria-live="polite">
+        </section>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image viewer">
+
+        <button
+            class="close-btn"
+            id="close-btn"
+            aria-label="Close">
+            ×
+        </button>
+
+        <button
+            class="lightbox-nav prev-btn"
+            id="prev-btn"
+            aria-label="Previous image">
+            ‹
+        </button>
+
+        <div class="lightbox-content">
+
+            <img
+                id="lightbox-image"
+                src=""
+                alt="Gallery image">
+
+        </div>
+
+        <button
+            class="lightbox-nav next-btn"
+            id="next-btn"
+            aria-label="Next image">
+            ›
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
