@@ -45,7 +45,7 @@ git clone https://github.com/your-username/your-repository-name.git
 
 ## 🌐 Live Demo
 
-[📸 Open picNest](https://your-username.github.io/your-repository-name/)
+[📸 Open picNest](https://nayeema26.github.io/CodeAlpha-Image-Gallery/)
 
 ## 👩‍💻 Internship Project
 
